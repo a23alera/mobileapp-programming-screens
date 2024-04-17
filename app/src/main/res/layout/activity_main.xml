@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text_hello_world"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -18,7 +19,10 @@
         android:id="@+id/button_open_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Öppna Andra Aktiviteten" />
+        android:text="Öppna Andra Aktiviteten"
+        app:layout_constraintTop_toBottomOf="@+id/text_hello_world"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
